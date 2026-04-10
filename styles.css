@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assests/get-started-b.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hadline {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.tag-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+
+}
+
+.tag {
+    background-color: rgba(235, 241, 186, 0.8);
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+
+}
+
+.tag--active {
+    background-color: rgb(179, 172, 177);
+    color: #000;
+    border: 2px solid #000;
+    cursor: crosshair;
+}
+
+.next-button {
+    background-color: var(--sds-color-background-brand-default);
+    border: none;
+    border-radius: var(--sds-size-radius-200);
+    padding: 24px;
+    width: 100%;
+    max-width: 398px;
+    font-family: var(--sds-typography-body-font-family);
+    font-weight: 300;
+    line-height: 1;
+    color: var(--sds-color-text-brand-default);
+    letter-spacing: -0.9px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 80px;
+    margin-left: 20%;
+}
+
+.next-button:hover {
+    background-color: #d5d4cc;
+    transform: translateY(-2px);
+}
+
+.next-button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .hadline {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .tag-container {
+        width: 90%;
+        gap: 10px;
+    }
+
+    .next-button {
+        width: calc(100% - 40px);
+        max-width: none;
+        margin-left: 10px;
+    }
+}
