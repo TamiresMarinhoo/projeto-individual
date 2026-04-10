@@ -6,7 +6,7 @@
 
 ## 📸 Preview do projeto
 
-![Preview do Projeto](./asseats/preview.png.png)
+![Preview do Projeto](assests/preview.png.png)
 
 ---
 
